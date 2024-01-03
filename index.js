@@ -1,9 +1,9 @@
 let id = 0;
 
-// added an event listener to await the 'clicking' of the add button before creating a new row in the table.
+// added an event listener for the 'clicking' of the add button before creating a new row in the table.
 document.getElementById('add').addEventListener('click', () => {
 
-// established a table to reflect the Gift, Price, and Recipient 
+//  Created a Grocery item, Price, and Recipient table or "Key"
     let createdDate = new Date();
     let table = document.getElementById('list');
     let row = table.insertRow(1);
@@ -16,7 +16,7 @@ document.getElementById('add').addEventListener('click', () => {
     document.getElementByID('new-gift').value = '';
 });
 
-// created a delete button to allow the user to remove items after they have been shopped for.
+// created a delete button to allow the shopper to delete as he/she goes.
 function createDeleteButton(id) {
     let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
