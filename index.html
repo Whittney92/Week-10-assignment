@@ -1,0 +1,69 @@
+
+<!-- Added HTML Boiler Plate w/ link to bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List for Whittney</title> </head>
+    <link rel="stylesheet" href= "node_modules/bootstrap/dist/css/bootstrap.css"
+
+
+<!-- Centered and colored my title -->
+<h1 style="color:rgba(0, 255, 60, 0.53); text-align: center;">Shopping List for Whittney</h1>
+
+<!-- Created containers and cards to withhold Gift, Price, and Recipient. They all used text fields. -->
+<body class="container"></body>
+<br> 
+<div class ="card">
+    <div class = "card-body">
+        <div class = "row">
+            <div class = "col-sm">
+                <div class = "form-group">
+                    <label for = "new-gift">Groceries</label>
+                    <input type="text" class="form-control" id="new-gift">
+                </div>
+             </div>
+            <div class = "col-sm">
+                <div class = "form-group">
+                    <label for = "new-price">Price</label>
+                    <input type="text" class="form-control" id="new-price">
+                </div>
+             </div>
+        </div>
+        <div class="row">
+            <div class = "col-sm">
+                <div class = "form-group">
+                    <label for = "new-recipient">Recipient</label>
+                    <input type="text" class="form-control" id="new-recipient">
+                </div>
+            </div>
+        </div>
+    <div> <button id = "add" class ="btn btn-primary from-control"> Add item</button>
+
+<!-- Added a button to "Add Item" -->
+    </div>
+</div>
+
+<!-- Found an image online of a woman purchasing produce and made that my background (created a step/repeat effect) -->
+<body background="woman-buying-produce.jpg"></body>
+
+<1-- Since my background is dark I used a light themed table for easier readability --></body>
+<table id ="list" class="table table-light table-striped">
+    <tr>
+        <th>Groceries</th>
+        <th>Price</th>
+        <th>Recipient</th>
+        <th>Actions</th>
+    </tr>
+
+
+
+</table>
+
+<!-- created my script sources to JavaScript, jQuery, and Bootstrap -->
+    <script src="gifts.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
